@@ -1,0 +1,73 @@
+.borrar
+{
+    float: right;
+    display: block;
+    color: rgb(159, 17, 17);
+    cursor: pointer;
+}
+.nota
+{
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    /* text-align: center; */
+    /* background-color: #b700ff; */
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #0d3a2c6e;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.contenedor
+{
+    padding: 50px 0;
+    width: 30%;
+    margin: 0 auto;
+    /* background-color: #874fc7; */
+    background-color: #EEE;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.titulo
+{
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    margin: 5px;
+    color: #b700ffb2;
+}
+.contenido
+{
+    margin: 5px;
+    font-size: 15px;
+    display: block;
+}
+button
+{
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top: auto;
+    width: 60%;
+    cursor: pointer;
+    color: #EEE;
+}
+input
+{
+    padding: 10px;
+    margin: 15px 5px;
+    background-color: #d8d8d8cd;
+    border-radius: 4px;
+    border: solid #eee;
+}
+textarea
+{
+    padding: 10px;
+    margin: 5px;
+    background-color: #d8d8d8cd;
+    border-radius: 4px;
+    border: solid #eee;
+}

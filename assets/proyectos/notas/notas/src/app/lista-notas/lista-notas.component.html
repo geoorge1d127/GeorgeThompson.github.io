@@ -1,0 +1,8 @@
+<div class="contenedor">
+    <div class="nota" *ngFor="let nota of notas">
+      <span class="borrar" (click)="borrar(nota.id)">X</span>
+      <span class="titulo">{{nota.titulo}}</span>
+      <span class="contenido">{{nota.contenido}}</span>
+    </div>
+    <button (click)="agregar()"  style="background-color: #b700ffb2;">+ Agregar Nota</button>
+  </div>
