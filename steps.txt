@@ -1,0 +1,3 @@
+1. Download Template (Forty)
+2. Change Title and <strong>Forty</strong> <span>by HTML5 UP</span>
+3. Fill out the about section
