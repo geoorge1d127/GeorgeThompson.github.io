@@ -6,13 +6,36 @@ var jugador2 = document.getElementById("jugador2")
 var jugadory = 0
 var velocidad = 3
 
+score = 0
+highScore = 0
+
 //Pelota
 var pelota = document.getElementById("bola")
 var pelotax = ancho / 2
 var pelotay = largo / 2
-var pelota_vel_x = 6
-var pelota_vel_y = 4
-
+var pelota_vel_x = 3
+var pelota_vel_y = 3
+function dificultad(value)
+{
+    if(value == 1)
+    {
+        pelota_vel_x = 4
+        pelota_vel_y = 3
+        velocidad = 2
+    }
+    else if(value == 2)
+    {
+        pelota_vel_x = 5
+        pelota_vel_y = 4
+        velocidad = 3
+    }
+    else
+    {
+        pelota_vel_x = 8
+        pelota_vel_y = 7
+        velocidad = 5
+    }
+}
 
 var Teclas = {};   
 window.addEventListener('keydown',function(e){
@@ -45,12 +68,21 @@ function gameLoop() {
     {
         if(collision())
         {
+            score +=1
+            document.querySelector(".currentScore").innerHTML = score
+            if(score > highScore)
+            {
+                highScore = score
+                document.querySelector(".highScore").innerHTML = score
+            }
             pelota_vel_x *= -1
         }
         else
         {
             pelotax = ancho / 2
             pelotay = largo / 2
+            score = 0
+            document.querySelector(".currentScore").innerHTML = score
         }
     }
     if(pelotay > largo - 20 || pelotay < 0)

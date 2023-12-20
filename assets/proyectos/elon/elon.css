@@ -22,7 +22,7 @@ h1, h2
     flex-direction: column;
     color: #EEE;
     width: 200px;
-    background-color: rgb(174, 8, 8);
+    background-color: #7D0A0A;
     height: 250px;
     border-radius: 4px;
     padding: 20px;
@@ -43,11 +43,16 @@ h1, h2
 body
 {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(222, 222, 26);
+    background-color: #EAD196;
 }
 
 img
 {
     width: 100%;
     margin: auto;
+}
+p
+{
+    color: #26001B;
+    margin-bottom: 1em;
 }

@@ -2,15 +2,34 @@
 {
     width: 300px;
     height: 400px;
+    margin: 5em auto;
     background-color: gold;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #000;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 #000;
 }
+body
+{
+    background-color: #004225;
+}
 .cabeza
 {
     float: right;
+    transition: all 0.5s ease;
+    width: 160px;
+    filter: grayscale(50%);
+    
+    filter:brightness(80%);
+}
+
+.cabeza:hover
+{
+    width: 180px;
+    cursor: pointer;
+    
+    filter: grayscale(0%);
+    filter:brightness(150%);
 }
 .cabezera
 {
@@ -34,6 +53,24 @@ span{
     display: block;
     font-size: 20px;
 }
+span:hover, h1:hover, h3:hover
+{
+    color: #F5F5DC;
+    cursor: pointer;
+}
+.gra
+{
+    transition: all 0.5s ease;
+    filter:brightness(80%);
+    width: 60px;
+}
+.gra:hover
+{
+    filter:brightness(120%);
+    /* box-shadow: 0 4px 8px 0 #000; */
+    width: 70px;
+}
+
 .nombre
 {
     font-size: 30px;

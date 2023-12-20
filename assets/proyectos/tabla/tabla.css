@@ -2,10 +2,16 @@ table, tr, th, td
 {
     border: 1px solid #333;
     border-collapse: collapse;
+    padding: 1px;
+    text-align: center;
 }
 th, td
 {
     width: 200px;
+}
+tr
+{
+    background-color: #FFF;
 }
 tr:nth-child(even)
 {
@@ -14,6 +20,7 @@ tr:nth-child(even)
 h1
 {
     text-align: center;
+    color: #EEE2DE;
 }
 .contenedor
 {
@@ -23,6 +30,10 @@ h1
 }
 tr:hover
 {
-    background-color: rgb(202, 46, 46);
+    background-color: #B31312;
     color: #EEE;
+}
+body
+{
+    background-color: #2B2A4C;
 }
